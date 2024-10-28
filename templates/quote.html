@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='quote.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="{{url_for('static', filename='images/logo.jpg')}}" class="image1">
+        <h1>Welcome To TM Car Insurance</h1>
+        <ul>
+            <li class="list2"><a href="index.html">Home</a></li>
+            <li class="list2"><a href="#">Claims</a></li>
+            <li class="list2"><a href="tel:078 750 2601">
+                    <i class="bi bi-telephone-fill"></i> 078 750 2601
+                </a></li>
+            <button class="nav-button">Log In/ Register</button>
+        </ul>
+    </nav>
+
+    <section class="section6" >
+        <form class="form1">
+            <div class="container">
+                <p>-Please fill out the form below to ensure that we give you accurate quotes.</p>
+                <br>
+            </div>
+            <label class="label1">First Name</label>
+            <input  class="input1" type="text" placeholder="Please enter your first name" name="name" required> <br>
+
+            <label class="label1">Surname</label>
+            <input class="input1" type="text" placeholder="Please enter your Surname" name="surname" required> <br>
+
+            <label class="label1">Date of birth</label> 
+            <input class="input1" type="date" name="date" required> <br>
+
+            <label class="label1">Gender</label>
+            <div class="gender1" name="gender">
+
+            <label class="radiolabel">
+            <input class="radio1" type="radio" name="gender">Female
+            </label>
+
+            <label class="radiolabel" >
+                <input class="radio1" type="radio" name="gender">Male
+            </label>
+
+            <label class="radiolabel" >
+                <input class="radio1" type="radio" name="gender">Other
+            </label> 
+            </div> <br><br>
+
+            <label class="label1">Marital Status</label>
+            <div class="maritalstatus">
+            <label class="radiolabel">
+                <input class="radio1" type="radio" name="maritalstatus" >Single
+            </label>
+
+            <label class="radiolabel" >
+                <input class="radio1" type="radio" name="maritalstatus">Married 
+            </label>
+
+            <label class="radiolabel">
+                <input class="radio1" type="radio"  name="maritalstatus" >Divorced
+            </label>
+            </div> <br>
+
+            <label  class="label1">Address</label> 
+            <input class="input1" type="text" name="address" placeholder="Please enter your home address" required> <br>
+
+            <label  class="label1">Email</label> 
+            <input class="input1" type="email"  name="email" placeholder="Please enter your email address" required> <br>
+
+            <label  class="label1">Cellphone Number</label> 
+            <input class="input1" type="cellphone"  name="cellphone" placeholder="Please enter your cellphone number" required> <br>
+
+            <label>
+            <input class="input2" type="text"> Yes, I'd like to be first to hear about TM Car Insurance news, savings tips <br>
+            <span style="margin-left: 19px;"> and deals. Learn more about our email and mobile communications.</span><br>
+            </label> 
+
+            <button class="button2" type="button" name="button">Car & Driver Details</button>
+        </form>
+        
+    </section>
+</body>
+
+</html>
